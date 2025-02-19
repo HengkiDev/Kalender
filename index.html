@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalender 2025</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calendar-container animate__animated animate__fadeIn">
+        <div class="header">
+            <div class="digital-clock" id="clock">00:00:00</div>
+            <div class="current-date" id="current-date">Loading...</div>
+            <div class="navigation">
+                <button class="nav-button" id="prev-month">←</button>
+                <div class="month-year" id="month-year">Januari 2025</div>
+                <button class="nav-button" id="next-month">→</button>
+            </div>
+        </div>
+
+        <div class="weekdays">
+            <div class="weekend">Min</div>
+            <div>Sen</div>
+            <div>Sel</div>
+            <div>Rab</div>
+            <div>Kam</div>
+            <div>Jum</div>
+            <div class="weekend">Sab</div>
+        </div>
+
+        <div class="calendar-grid" id="calendar-grid"></div>
+    </div>
+
+    <section class="holiday-section">
+        <h1 class="title">Kalender Hari Libur Nasional 2025</h1>
+        
+        <div class="filter-buttons">
+            <button class="filter-button" data-filter="national">Nasional</button>
+            <button class="filter-button" data-filter="religious">Keagamaan</button>
+             <button class="filter-button active" data-filter="all">Semua</button>
+        </div>
+
+        <div class="holiday-list" id="holiday-list"></div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
